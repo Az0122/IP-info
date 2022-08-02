@@ -7,6 +7,7 @@ if platform == 'linux':
     system('clear')
 else:
     system('cls')
+    # i hate mac os ^_^
 init(autoreset=True)
 red = Fore.RED
 yellow = Fore.YELLOW
@@ -70,6 +71,6 @@ if ('"status":false,"message":"IP Address Is Invalid"') in r.text:
     print('')
     sleep(3)
     s()
-# there is a bug on the api i if you wrong with the ip the api will crash so i have to request agein <3 
+# there is a bug on the api  if you wrong with the ip the api will crash so i have to request agein <3 
 requests = requests.get(url)
 print(f'{green}{requests.text}')
