@@ -70,6 +70,6 @@ if ('"status":false,"message":"IP Address Is Invalid"') in r.text:
     print('')
     sleep(3)
     s()
-
+# there is a bug on the api i if you wrong with the ip the api will crash so i have to request agein <3 
 requests = requests.get(url)
 print(f'{green}{requests.text}')
